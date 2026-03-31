@@ -1,88 +1,110 @@
+
+```html
 <!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بطاقة أعمال</title>
+<title>Team Alpha</title>
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f5f5f5;
-        text-align: center;
-        padding: 20px;
-    }
-    .card {
-        background: #fff;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        max-width: 400px;
-        margin: auto;
-    }
-    h1 {
-        margin-bottom: 10px;
-    }
-    input, textarea, button {
-        width: 90%;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-    }
-    button {
-        background: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-    button:hover {
-        background: #0056b3;
-    }
-    .social-icons a {
-        margin: 0 10px;
-        text-decoration: none;
-        font-size: 24px;
-    }
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+/* البانر */
+.header {
+  height: 200px;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* اللوجو */
+.logo {
+  width: 120px;
+  height: 120px;
+  background: black;
+  border-radius: 20px;
+  margin: -60px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+/* العنوان */
+h1 {
+  color: #2c5364;
+}
+
+/* الأزرار */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.insta {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+/* الكروت */
+.card {
+  background: white;
+  margin: 15px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 </style>
+
 </head>
+
 <body>
 
-<div class="card">
-    <h1>بطاقة أعمال</h1>
-    <p>تواصل معنا بسهولة</p>
+<div class="header">TEAM ALPHA</div>
 
-    <!-- نموذج جمع البيانات -->
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="الاسم" required>
-        <input type="email" id="email" placeholder="الإيميل" required>
-        <textarea id="message" placeholder="رسالتك..." rows="3" required></textarea>
-        <button type="submit">أرسل</button>
-    </form>
+<div class="logo">TA</div>
 
-    <!-- روابط السوشيال -->
-    <div class="social-icons">
-        <a href="https://instagram.com/https://www.instagram.com/alpha_.eg1?igsh=MTZyaGF4N25tbXo2cQ%3D%3D&utm_source=qr" target="_blank">📸</a>
-        <a href="https://wa.me/رقمك" target="_blank">💬</a>
-        <a href="https://www.tiktok.com/@https://www.tiktok.com/@tika_ya_ngm?_r=1&_t=ZS-958zCNdnD5Z" target="_blank">🎵</a>
-        <a href="https://facebook.com/https://www.facebook.com/share/1YiirL2Dza/?mibextid=wwXIfr" target="_blank">📘</a>
-    </div>
+<h1>ALPHA</h1>
+<p>يختلف عن غيرنا كثير و يساعدك تكون مختلف</p>
+
+<div class="buttons">
+  <a href="#" class="btn insta">Instagram</a>
+  <a href="#" class="btn whatsapp">WhatsApp</a>
 </div>
 
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
+<div class="card">
+  📞 01150519460
+</div>
 
-    // هنا ممكن نضيف إرسال البيانات لجوجل شيت أو أي سيرفر
-    alert('شكراً يا '+name+'! تم إرسال رسالتك.');
-
-    // إعادة ضبط النموذج
-    document.getElementById('contactForm').reset();
-});
-</script>
+<div class="card">
+  ✉️ alpha009989@gmail.com
+</div>
 
 </body>
 </html>
+```
