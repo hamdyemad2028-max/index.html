@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بطاقة أعمال</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        text-align: center;
+        padding: 20px;
+    }
+    .card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        max-width: 400px;
+        margin: auto;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+    input, textarea, button {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+    button {
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #0056b3;
+    }
+    .social-icons a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 24px;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>بطاقة أعمال</h1>
+    <p>تواصل معنا بسهولة</p>
+
+    <!-- نموذج جمع البيانات -->
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="الاسم" required>
+        <input type="email" id="email" placeholder="الإيميل" required>
+        <textarea id="message" placeholder="رسالتك..." rows="3" required></textarea>
+        <button type="submit">أرسل</button>
+    </form>
+
+    <!-- روابط السوشيال -->
+    <div class="social-icons">
+        <a href="https://instagram.com/https://www.instagram.com/alpha_.eg1?igsh=MTZyaGF4N25tbXo2cQ%3D%3D&utm_source=qr" target="_blank">📸</a>
+        <a href="https://wa.me/رقمك" target="_blank">💬</a>
+        <a href="https://www.tiktok.com/@https://www.tiktok.com/@tika_ya_ngm?_r=1&_t=ZS-958zCNdnD5Z" target="_blank">🎵</a>
+        <a href="https://facebook.com/https://www.facebook.com/share/1YiirL2Dza/?mibextid=wwXIfr" target="_blank">📘</a>
+    </div>
+</div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+
+    // هنا ممكن نضيف إرسال البيانات لجوجل شيت أو أي سيرفر
+    alert('شكراً يا '+name+'! تم إرسال رسالتك.');
+
+    // إعادة ضبط النموذج
+    document.getElementById('contactForm').reset();
+});
+</script>
+
+</body>
+</html>
